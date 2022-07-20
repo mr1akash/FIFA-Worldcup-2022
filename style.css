@@ -1,8 +1,12 @@
+/*body Start*/
 body {
     max-width: 85%;
     margin:0 auto;
     font-family: 'Poppins', sans-serif;
 }
+/*body end*/
+
+/*header start*/
 .parent-header{
     background-color:rgba(24, 22, 22, 0.979);
     color: azure;
@@ -39,7 +43,7 @@ body {
 }
 .header-item1 button:hover{
     color: white;
-    background-image: linear-gradient(black,red);
+    background-image: linear-gradient(orange,red);
 }
 .header-item2{
     width: 50%;
@@ -52,5 +56,9 @@ body {
     align-items:flex-end;
     position:relative;
 }
+/*header end*/
+
+/* main start*/
+
 
 
