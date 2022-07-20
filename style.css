@@ -2,5 +2,28 @@ body {
     max-width: 85%;
     margin:0 auto;
 }
+.parent-header{
+    background-color:rgb(15, 14, 14);
+    color: azure;
+    display: flex;
+    margin-top: 4%;
+    border-radius: 30px;
+    height: 570px;
+    margin-bottom: 5%;
+    justify-content: space-evenly;
+}
+.header-item1{
+    width: 50%;
+    padding: 5%;
+}
+.header-item1 h1{
+    font-size: 5vw;
+}
+
+
+.header-item2{
+    width: 50%;
+    border: 1px solid white;
+}
 
 
