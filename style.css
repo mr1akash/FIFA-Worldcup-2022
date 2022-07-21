@@ -304,6 +304,9 @@ footer a{
         border-radius: 10px;
         text-align: center;
     }
+    .view-all{
+        display: none;
+    }
 
     .nav{
         margin:0 20%;
