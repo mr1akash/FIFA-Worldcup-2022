@@ -137,7 +137,7 @@ header,main{
     border-top-right-radius: 10px;
 }
 .grid-text{
-    margin: 5%;
+    margin: 15px;
 }
 .grid-text button{
     border-radius: 3px;
@@ -177,15 +177,24 @@ header,main{
 .flag-text p{
     color: gray;
 }
+/* end upcoming match */
+
+.view-all{
+    display: none;
+}
 
 /* start footer */
 footer{
-    margin-top:10%;
+    margin-top:50px;
     text-align: center;
     background-color:rgba(24, 22, 22, 0.979);
     color: white;
     width: 100%;
     height: 250px;
+}
+.footer-link{
+    margin: 0 auto;
+    width: 80%;
 }
 footer h1{
     padding-top: 50px;
@@ -203,5 +212,173 @@ footer a{
     color: rgb(160, 156, 156);
     font-weight: 600;
 }
+.footer-social{
+    margin: 0 auto;
+    width: 100%;
+}
+.footer-social i{
+    font-size: 20px;
+    padding: 10px 5px;
+}
+.footer-social i:hover{
+    color: white;
+}
 /* end footer */
+
 /* making responsive screen */
+@media screen and (max-width: 992px) {   
+    .header-item1 h1{
+        padding: 0;
+        margin-top: 2%;
+        font-size: 35px;
+    }
+    .header-item1 p{
+        margin-top: 0;
+        padding-top: 0%;
+        font-weight: 400;
+        font-size: 20px;
+    }
+    .box-grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(4,1fr); 
+    margin-bottom: 0;
+    padding-bottom: 0;  
+    }
+    .box-nav{
+        display: inline;
+        margin: 0 auto;
+        width: 100%;
+        height:100%;
+        background-color: white;
+        text-align: center;
+    }
+    .container-blog{
+        flex-direction: column;
+    }
+    .nav{
+     padding: 0 10px;
+    }
+    .active-btn{
+        justify-content:center;
+        display: inline;
+        border: 1px solid black;
+        width: 1800px;
+        font-size: 20px;
+        font-weight: 600;
+        padding: 10px 15px;
+        border-radius: 5px;
+        color: black;
+    }
+    .nav-btn{
+        display: inline;
+        border: 1px solid black;
+        width: 180px;
+        font-size: 20px;
+        font-weight: 600;
+        padding: 10px 15px;
+        border-radius: 5px;
+        color: black;
+    }  
+    .view-all{
+        margin-top: 50px;
+        text-align: center;
+    }
+    .view-all a{
+        background-color: #DD0000;
+        padding: 16px 25px;
+        font-size: 20px;
+        text-decoration: none;
+        font-weight: 400;
+        color: #FFFFFF;
+        line-height: 23px;
+    } 
+
+   
+
+}
+@media screen and (max-width: 662px) {
+    .parent-header{
+        display: block;
+        border-radius: 10px;
+        text-align: center;
+    }
+
+    .nav{
+        padding-left: 40px;
+        margin:0 auto;
+        margin: 20px;
+        
+    }
+    .nav-btn{
+        border: 1px solid #e8e8e8 ;
+        margin-bottom: 30px;
+        width: 180px;
+        font-size: 20px;
+        font-weight: 600;
+        padding: 10px 15px;
+        border-radius: 5px;
+        background-color: white;
+        color: black;
+        text-decoration: none;
+        display: block
+    
+    }
+    .active-btn{
+        margin-bottom: 30px;
+        width: 180px;
+        font-size: 20px;
+        font-weight: 600;
+        padding: 10px 15px;
+        border-radius: 5px;
+        background-color: red;
+        color: white;
+        border: none;
+        text-decoration: none;
+        display: block
+        
+    }
+    .header-item1{
+        padding: 0;
+        margin: 0 auto;
+        height: 40%;
+    }
+    .header-item1 h1{
+        padding: 0;
+        margin-top: 27px;
+        font-size: 20px;
+    }
+    .header-item1 p{
+        font-size: 13px;
+    }
+    .header-item2{
+        position: relative;
+        top: 2px;
+        margin: 0 15px;
+        padding: 0;
+        height: 327px;
+    }
+    .header-item2 img{
+
+    }
+    .box-grid{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: 1fr;
+        height: fit-content;
+        }
+        .grid{
+
+        }
+        .footer-link a{
+            align-items: center;
+            display: block;
+        }
+        footer{
+            display: flex;
+            flex-direction: column;
+            margin-top:70%;
+            padding-bottom: 60%;
+        }
+}
+
+ 
