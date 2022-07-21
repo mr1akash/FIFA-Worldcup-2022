@@ -14,7 +14,8 @@ header,main{
 .parent-header{
     background-color: rgb(20, 19, 19);
     color: azure;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
     margin-top: 4%;
     border-radius: 30px;
     height: 560px;
@@ -52,53 +53,59 @@ header,main{
 }
 .header-item2{
     width: 50%;
-    margin-right: 5%;
-    margin-top: 7%;
     border: none;
 }
 .header-item2 img{
     width: 100%;
     align-items:flex-end;
     position:relative;
+    bottom: 0;
 }
 /*header end*/
 
 /* blog start*/
 .container-blog{
     display: flex;
-    justify-content: space-evenly;
+    
 }
-.nav{
-    width: 250px;
-    height: 250px;
+.box-nav{
+    width: 260px;
+    height: 260px;
     background-color: rgb(20, 19, 19);
     border-radius: 5%;
     text-align: center;
+}
+.nav{
+    margin:0 auto;
+    margin: 20px;
     
 }
 .nav-btn{
+    margin-bottom: 30px;
+    width: 180px;
     font-size: 20px;
     font-weight: 600;
     padding: 10px 15px;
     border-radius: 5px;
-    border: none;
-    background-color: rgb(245, 9, 9);
-    color: white;
+    background-color: white;
+    color: black;
     border: none;
     text-decoration: none;
-    display: block;
+    display: block
+
 }
 .active-btn{
+    margin-bottom: 30px;
+    width: 180px;
     font-size: 20px;
     font-weight: 600;
     padding: 10px 15px;
     border-radius: 5px;
-    border: none;
-    background-color: rgb(245, 9, 9);
+    background-color: white;
     color: white;
     border: none;
     text-decoration: none;
-    display: block;
+    display: block
     
 }
 .nav-btn:hover{
@@ -192,15 +199,3 @@ footer a{
 }
 /* end footer */
 /* making responsive screen */
-@media screen and (max-width:960px) {
-    .box-grid{
-        grid-template-columns: repeat(2,1fr);
-
-    }
-.box-grid{
-    display: grid;
-    row-gap: 2%;
-    column-gap: 2%;
-    margin-left: 3%;
-}
-}
