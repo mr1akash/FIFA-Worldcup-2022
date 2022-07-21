@@ -29,7 +29,7 @@ header,main{
 .header-item1 h1{
     padding: 0;
     margin-top: 2%;
-    font-size: 4vw;
+    font-size: 40px;
 }
 .header-item1 p{
     margin-top: 0;
@@ -43,7 +43,7 @@ header,main{
     padding: 10px 15px;
     border-radius: 5px;
     border: none;
-    background-color: red;
+    background-color: rgb(245, 9, 9);
     color: white;
 }
 .header-item1 button:hover{
@@ -63,7 +63,7 @@ header,main{
 }
 /*header end*/
 
-/* main start*/
+/* blog start*/
 .container-blog{
     display: flex;
     justify-content: space-evenly;
@@ -73,22 +73,38 @@ header,main{
     height: 250px;
     background-color: rgb(20, 19, 19);
     border-radius: 5%;
-}
-.nav button{
-    width: 80%;
-    height: 20%;
     text-align: center;
+    
+}
+.nav-btn{
     font-size: 20px;
     font-weight: 600;
-    border-radius: 10px;
-    margin-left: 10%;
-    margin-top: 10%;
+    padding: 10px 15px;
+    border-radius: 5px;
     border: none;
-}
-.nav button:hover{
+    background-color: rgb(245, 9, 9);
     color: white;
-    background-image: linear-gradient(rgb(216, 22, 22),rgb(204, 13, 13));
+    border: none;
+    text-decoration: none;
+    display: block;
 }
+.active-btn{
+    font-size: 20px;
+    font-weight: 600;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(245, 9, 9);
+    color: white;
+    border: none;
+    text-decoration: none;
+    display: block;
+    
+}
+.nav-btn:hover{
+    color: white;
+    background-color: rgb(245, 9, 9);
+} 
 .box-grid{
     display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -122,6 +138,34 @@ header,main{
     color: grey;
     font-weight: 400;
 }
+/* end blog */
+
+/* active button */
+.active-btn{
+    background-color: rgb(245, 9, 9);
+    color: white;
+}
+
+/* start upcoming match */
+
+.grid-img{
+    display: flex;
+    width: 40%;
+    align-items: center;
+    margin: 6%;
+    padding-top: 5%;
+    font-weight: 800;
+}
+
+.flag-text{
+    text-align: center;
+    padding-bottom: 5%;
+}
+.flag-text p{
+    color: gray;
+}
+
+/* start footer */
 footer{
     margin-top:10%;
     text-align: center;
@@ -133,6 +177,7 @@ footer{
 footer h1{
     padding-top: 50px;
     margin-bottom: 40px;
+    font-family: 'Josefin Sans', sans-serif;
 }
 footer hr{
     margin-bottom: 40px;
@@ -145,5 +190,17 @@ footer a{
     color: rgb(160, 156, 156);
     font-weight: 600;
 }
+/* end footer */
+/* making responsive screen */
+@media screen and (max-width:960px) {
+    .box-grid{
+        grid-template-columns: repeat(2,1fr);
 
-
+    }
+.box-grid{
+    display: grid;
+    row-gap: 2%;
+    column-gap: 2%;
+    margin-left: 3%;
+}
+}
